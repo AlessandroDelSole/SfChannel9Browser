@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Syncfusion.SfBusyIndicator.XForms.Droid;
 
 namespace Channel9Browser.Droid
 {
@@ -21,6 +22,8 @@ namespace Channel9Browser.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
+
+            new SfBusyIndicatorRenderer();
         }
     }
 }
