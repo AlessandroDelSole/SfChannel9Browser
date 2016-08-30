@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+             x:Class="Channel9Browser.Pages.CalendarPage">
+  <StackLayout>
+    <Label Text="Select a date"/>
+
+    <calendar:SfCalendar x:Name="calendar" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+                SelectionMode="SingleSelection"
+                ViewMode="MonthView"
+                ShowInlineEvents="true"
+                DataSource="{Binding}"/>
+
+    <Button x:Name="GoButton" Text="Go!" Clicked="GoButton_Clicked"/>
+  </StackLayout>
+</ContentPage>
